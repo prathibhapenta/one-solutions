@@ -1,0 +1,323 @@
+.container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 30px; 
+  background-color: #fff; 
+  position: relative; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+} 
+
+.logo img { 
+  height: 50px; 
+  width: auto; 
+  cursor: pointer; 
+  padding-left: 20%; 
+} 
+
+.nav-links { 
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  padding-right: 10%; 
+} 
+
+.nav-links li a { 
+  text-decoration: none; 
+  color: #333; 
+  font-weight: bold; 
+  padding: 8px 0; 
+  transition: all 0.3s ease; 
+} 
+
+.nav-links li a:hover { 
+  color: black; 
+} 
+
+.help-earn button:hover { 
+  opacity: 0.85; 
+} 
+
+.mentor-connect { 
+  display: flex; 
+  align-items: center; 
+  gap: 5px; 
+} 
+
+.mentor-connect p { 
+  margin: 0; 
+  font-weight: 500; 
+  font-size: 14px; 
+  color: #333; 
+} 
+
+.help-earn .placementimg { 
+  height: 40px; 
+  width: 40px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  cursor: pointer; 
+} 
+
+.help-earn { 
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+} 
+
+.help-earn button { 
+  background: linear-gradient(90deg, #800080, #000080, #483d8b); 
+  border: none; 
+  border-radius: 8px; 
+  color: #fff; 
+  padding: 10px 15px; 
+  font-weight: bold; 
+  cursor: pointer; 
+} 
+
+
+.helpandearn:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+  width: 180%;
+  z-index: 1000;
+}
+
+
+.dropdown-content h4 { 
+  margin: 0 0 10px 0; 
+  font-size: 18px; 
+  text-align: center; 
+} 
+
+.dropdown-content p { 
+  font-size: 14px; 
+  margin: 0 0 12px 0; 
+  text-align: center; 
+  color: #555; 
+} 
+
+.referallnbonuse { 
+  background: #f9f5ff; 
+  border: 1px solid #e0d7f5; 
+  border-radius: 10px; 
+  padding-left: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+} 
+
+.referallnbonuse h3 { 
+  color: #4b0082; 
+  font-size: 22px; 
+  margin-bottom: 15px; 
+} 
+
+.referallnbonuse p { 
+  color: #555; 
+  font-size: 14px; 
+  
+} 
+
+.importent-instructions { 
+  background: #f0f8ff; 
+  border: 1px solid #cce0ff; 
+  border-radius: 10px; 
+  padding-left: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+} 
+
+.importent-instructions h3 { 
+  font-size: 22px; 
+  color: #000080; 
+  margin-bottom: 15px; 
+} 
+
+.importent-instructions p { 
+  color: #444; 
+  font-size: 14px; 
+  margin-bottom: 15px; 
+} 
+
+.importent-instructions div {
+  display: flex;
+  align-items: center;   
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%;           
+  max-width: 400px;      
+}
+
+.importent-instructions input {
+  flex: 1;                          
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.importent-instructions input:focus {
+  border-color: #800080;            
+}
+
+.importent-instructions button.copy-btn {
+  background: linear-gradient(90deg, #800080, #000080, #483d8b);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.importent-instructions button.copy-btn:hover {
+  opacity: 0.85;
+}
+
+
+.importent-instructions button { 
+  background: linear-gradient(90deg, #800080, #000080, #483d8b); 
+  color: white; 
+  border: none; 
+  border-radius: 6px; 
+  padding: 8px 15px; 
+  cursor: pointer; 
+  font-weight: bold; 
+  transition: 0.3s; 
+} 
+
+.importent-instructions button:hover { 
+  opacity: 0.85; 
+}
+.referring-button {
+  display: block;       
+  margin: 10px auto;    
+  background: linear-gradient(90deg, #800080, #000080, #483d8b);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  width: fit-content;  
+}
+
+.referring-button:hover {
+  opacity: 0.85;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 70px; 
+  right: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  z-index: 1000;
+  overflow: hidden;
+  animation: dropdownFade 0.3s ease;
+}
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  background: #f9f9ff;
+}
+
+.profile-header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-header h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.profile-header .status {
+  margin: 0;
+  font-size: 13px;
+  color: green;
+  font-weight: 500;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown ul li {
+  display: flex;
+  align-items: center;
+}
+
+.profile-dropdown ul li a,
+.profile-dropdown ul li button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.profile-dropdown ul li a:hover,
+.profile-dropdown ul li button:hover {
+  background: #f4f4f4;
+  color: #000;
+}
+.mentor-connect a {
+  text-decoration: none;
+  color:inherit;        
+}
+
+
