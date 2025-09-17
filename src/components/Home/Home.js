@@ -117,7 +117,7 @@ const Home = () => {
           iconColor: "#078866ff",
         },
         {
-          id: "pr1",
+          id: "pr3",
           title: "Path To Proficiency",
           challenge: "Intermediate Challenge",
           progress: "0%",
@@ -168,7 +168,7 @@ const Home = () => {
     },
   };
   return (
-    <div>
+    <div className='website'>
       
        <div className="broKod-container">
         <div className="broKod-container-text">
@@ -185,7 +185,7 @@ const Home = () => {
       <div className="live">
         {homeData.liveClasses.items.map((item) => (
           <div key={item.id} className="liveclasses-container">
-            <div className="indicator-bar"></div>
+           <div className="indicator-bar"></div>
             <div className="information">
               <div className="class-info">
                 <button className="letter-tag">{item.letter}</button>

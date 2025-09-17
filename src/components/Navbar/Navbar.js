@@ -52,7 +52,7 @@ const Navbar = () => {
         <button onClick={toggleDropdown}>Help and Earn</button>
 
         {showDropdown && (
-          <div className="dropdown-content">
+          <div className="dropdown-content" style = {{width: "500px"}}>
             <h4
               style={{
                 background: "linear-gradient(to right, #800080, #000080, #483d8b)",
@@ -111,6 +111,14 @@ const Navbar = () => {
           className="placementimg"
           onClick={toggleProfile}
         />
+        <div className="footer-menu">
+  <Link to="/" className="active"><i className="bi bi-house"></i><span>Home</span></Link>
+  <Link to="/courses"><i className="bi bi-journal-bookmark"></i><span>Courses</span></Link>
+  <Link to="/practice"><i className="bi bi-pencil-square"></i><span>Practice</span></Link>
+  <Link to="/placements"><i className="bi bi-award"></i><span>Placements</span></Link>
+  <Link to="/community"><i className="bi bi-people"></i><span>Community</span></Link>
+  <button onClick={toggleDropdown}><i className="bi bi-gift"></i><span>Help & Earn</span></button>
+</div>
         {showProfile && (
           <div className="profile-dropdown">
             <div className="profile-header">
@@ -133,6 +141,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
+    
   );
 };
 

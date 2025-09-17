@@ -71,10 +71,9 @@ h1{
   padding-top: 10px;
   gap: 20px; 
   flex-wrap: wrap;
-
+  height: auto;
 }
-.liveclasses-container {
-   
+.liveclasses-container { 
   display: flex;
   flex-direction: column; 
   justify-content: flex-start;  
@@ -83,6 +82,8 @@ h1{
   width: 30%; 
   border-radius: 5px;
   overflow: hidden; 
+  min-height: auto; 
+  padding-bottom: 10px;
 }
 .card {
   height: auto;
@@ -107,6 +108,7 @@ h1{
   flex-direction: row;
   padding: 16px;
   gap: 36px;
+  min-height: 250px;
   
 }
 
@@ -148,19 +150,29 @@ h1{
   font-weight: 600;
   flex: 1;
 }
-
 .class-info h3 {
   margin: 0;
   font-size: 15px;
   font-weight: 600;
   color: #222;
+  white-space: nowrap;       
+  overflow: hidden;           
+  text-overflow: ellipsis;    
+  max-width: 100%;           
+  display: block;
 }
 
 .class-info p {
   margin: 0;
   color: #555;
   font-size: 14px;
+  white-space: nowrap;        
+  overflow: hidden;           
+  text-overflow: ellipsis;    
+  max-width: 100%;           
+  display: block;
 }
+
 
 .status.upcoming {
   background-color: #d0e8ff6a;
@@ -181,8 +193,9 @@ h1{
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 0px;
+   padding: 10px 15px;
+  
 }
 
 .progress-time .row {
@@ -211,17 +224,19 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80%; 
   background-color: #bbbaba16;
-  margin-top: px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 8px 15px;   /* small padding */
+  height: 40px;        /* fixed neat height */
 }
 
 .actions p {
+  margin: 0;           /* remove extra margin */
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  align-items: center; 
 }
+
 
 .join-btn:hover {
   background-color: #0056b3;
@@ -261,12 +276,6 @@ h1{
   height: 34px;
   margin-bottom: 0px;  
 }
-hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  width: 90%;
-}
-
 
 .progress-bar-container {
   width: 100%;
@@ -282,5 +291,160 @@ hr {
     background-color: black;
   border-radius: 2px;
   transition: width 0.3s ease-in-out;
+}
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .broKod-container {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .broKod-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .live {
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 25px;
+    height: auto;
+  }
+
+  .liveclasses-container {
+    width: auto;
+    min-height: auto;
+  }
+
+  .class-info {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .actions {
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .attendence-buttons {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .attendence-button button {
+    width: 120px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+ .placed-container {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  gap: 5px;
+  width: 100%;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    padding-left: 5%;
+    font-size: 19px;
+  }
+
+  .broKod-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 25px auto;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .broKod-container img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .live {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 15px;
+  }
+
+  .liveclasses-container {
+    width: 45%;
+    min-height: auto;
+  }
+
+  .class-info {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .attendence-buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .attendence-button button {
+    width: 45%;
+  }
+
+  .placed-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .live {
+    justify-content: flex-start;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .liveclasses-container {
+    width: 30%;
+  }
+  .placed-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
 }
 

@@ -204,4 +204,133 @@ span{
   font-size: 16px;
   font-weight: 500;
   color: #333;
+}@media (max-width: 480px) {
+  .courses-container {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .courses-information {
+    flex-direction: row;   
+    gap: 10px;
+    text-align: center;
+  }
+
+  .courses-information p {
+    font-size: 14px;
+  }
+
+  .drop-down {
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .drop-down select {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .courses {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .couses-and-status {
+    flex-direction: row;   
+    gap: 10px;
+    text-align: center;
+  }
+
+  .module-topics {
+    flex-direction: row;   
+    gap: 8px;
+  }
+
+  .mentor-progress {
+    flex-direction: row;  
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .progress-section {
+    width: 100%;
+  }
+
+  .progress {
+    max-width: 100%;
+  }
+
+  .view-continue {
+    flex-direction: row;   
+    margin: 10px 0 0 0;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .btn-view,
+  .btn-continue {
+    width: 50%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px)  {
+  .courses-container {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .courses-information {
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .courses-information p {
+    font-size: 15px;
+  }
+
+  .drop-down {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .drop-down select {
+    width: 220px;
+  }
+
+  .courses {
+    padding: 15px;
+  }
+
+  .mentor-progress {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .progress-section {
+    flex: 1 1 100%;
+  }
+
+  .progress {
+    max-width: 100%;
+  }
+
+  .view-continue {
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0 0 0;
+  }
+
+  .btn-view,
+  .btn-continue {
+    flex: 1;
+    justify-content: center;
+  }
 }

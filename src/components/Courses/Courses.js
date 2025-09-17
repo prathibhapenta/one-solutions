@@ -111,7 +111,7 @@ const coursesData = {
             <div className="mentor-progress">
               <img src="/assets/placements.jpg" alt="BroKod" className='placementimg'/>
               <div className='mentor-name' style={{paddingLeft: "5px"}}>
-                <p>Mentor Name</p>
+                <p>Mentor</p>
                 <p style={{color: "black", fontSize:"16px" }}>{course.mentor}</p>
               </div>
               <div className='mentor-name'>
