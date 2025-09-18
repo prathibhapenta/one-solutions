@@ -260,6 +260,7 @@ span{
     flex-direction: row;  
     align-items: flex-start;
     gap: 12px;
+    white-space: nowrap;
   }
   .placementimg{
     height: 40px;
