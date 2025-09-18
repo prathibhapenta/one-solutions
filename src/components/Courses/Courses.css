@@ -66,14 +66,16 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   gap: 15px;
 }
+
 .courses:hover {
   border-color: blue; 
   cursor: pointer;
 }
 
-span{
+span {
   font-size: 20px;
 }
+
 .couses-and-status {
   display: flex;
   justify-content: space-between;
@@ -109,28 +111,33 @@ span{
   font-weight: 500;
   cursor: pointer;
 }
+
 .mentor-progress {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
 }
+
 .mentor-name {
   flex: 1.5;   
 }
+
 .mentor-name p {
   margin: 5px;
   font-size: 14px;
   font-weight: 500;
   color: #7d7b7b;
 }
-.placementimg{
+
+.placementimg {
   width: 50px;
   height: 50px;
   flex-shrink: 0;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .progress-section {
   flex: 2;                 
   display: flex;
@@ -143,7 +150,7 @@ span{
 .progress {
   background-color: #e9ecef;
   border-radius: 6px;
-   border: 1px solid black;
+  border: 1px solid black;
   height: 10px;
   width: 100%;    
   max-width: 300px;        
@@ -158,6 +165,7 @@ span{
   text-align: center;
   color: #fff;
 }
+
 .view-continue {
   display: flex;
   justify-content: flex-end;
@@ -169,26 +177,26 @@ span{
 
 .btn-view {
   background-color: white;
-  border: 2px solid ;
+  border: 2px solid;
   color: black;
   padding: 10px 20px;
   border-radius: 5px;
   display: flex;
   gap: 8px;
-   font-size: 15px;
+  font-size: 15px;
 }
 
 .btn-continue {
   background-color: black;
   color: white;
   padding: 10px 20px;
- font-size: 15px;
+  font-size: 15px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 8px;
-  
 }
+
 .active-module {
   display: flex;
   justify-content: center;
@@ -202,7 +210,6 @@ span{
   border-radius: 50%;
   padding: 6px 12px;
   font-size: 25px;
-  
 }
 
 .active-module p {
@@ -210,7 +217,9 @@ span{
   font-size: 16px;
   font-weight: 500;
   color: #333;
-}@media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .courses-container {
     margin: 0;
     padding: 15px;
@@ -226,7 +235,7 @@ span{
   }
 
   .courses-information p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .drop-down {
@@ -251,6 +260,10 @@ span{
     text-align: center;
   }
 
+  .couses-and-status h4 {
+    font-size: 12px;
+  }
+
   .module-topics {
     flex-direction: row;   
     gap: 8px;
@@ -262,7 +275,8 @@ span{
     gap: 12px;
     white-space: nowrap;
   }
-  .placementimg{
+
+  .placementimg {
     height: 40px;
     width: 40px;
   }
@@ -289,7 +303,7 @@ span{
   }
 }
 
-@media (max-width: 768px)  {
+@media (max-width: 768px) {
   .courses-container {
     margin: 0;
     padding: 20px;

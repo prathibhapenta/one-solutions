@@ -339,8 +339,9 @@ hr {
   }
 
   .liveclasses-container {
-    width: auto;
-    min-height: auto;
+    width: 100%;
+    margin : 0 auto;
+    
   }
 
   .class-info {
@@ -367,12 +368,13 @@ hr {
   }
 
   .attendence-button button {
-    width: 120px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 12px;
   }
 
  .placed-container {
@@ -419,7 +421,7 @@ hr {
   }
 
   .liveclasses-container {
-    width: 45%;
+    width: 48%;
     min-height: auto;
   }
 
