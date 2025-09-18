@@ -124,7 +124,13 @@ span{
   font-weight: 500;
   color: #7d7b7b;
 }
-
+.placementimg{
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .progress-section {
   flex: 2;                 
   display: flex;
@@ -226,6 +232,7 @@ span{
   .drop-down {
     padding-top: 15px;
     text-align: center;
+    padding-bottom: 20px;
   }
 
   .drop-down select {
@@ -235,7 +242,7 @@ span{
 
   .courses {
     padding: 12px;
-    gap: 10px;
+    gap: 15px;
   }
 
   .couses-and-status {
@@ -253,6 +260,10 @@ span{
     flex-direction: row;  
     align-items: flex-start;
     gap: 12px;
+  }
+  .placementimg{
+    height: 40px;
+    width: 40px;
   }
 
   .progress-section {

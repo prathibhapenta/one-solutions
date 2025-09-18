@@ -123,7 +123,7 @@ const coursesData = {
                 <p style={{color: "black", fontSize:"16px"}}>{course.type}</p>
               </div>
               <div className="progress-section">
-                <span>{course.progress}%</span>
+                <p>{course.progress}%</p>
                 <div className="progress">
                   <div
                     className="progress-bar"

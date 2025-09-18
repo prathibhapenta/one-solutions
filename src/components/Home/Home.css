@@ -3,20 +3,20 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 20px;
-  width: 80%;
+  width: 84%;
   margin: 30px auto;
   display: flex;
-  flex-direction: row;   
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-.span{
+
+.span {
   padding-bottom: 20px;
   padding-top: 10px;
   font-size: 17px;
 }
-
 
 .broKod-container-text {
   flex: 1;
@@ -37,7 +37,7 @@
 }
 
 .broKod-container-text button {
-  background-color:#87cefa;
+  background-color: #87cefa;
   color: black;
   font-size: 16px;
   font-weight: 600;
@@ -58,76 +58,74 @@
   max-width: 400px;
   border-radius: 8px;
 }
-h1{
-  padding-left: 8%; 
+
+h1 {
+  padding-left: 8%;
   font-size: 20px;
   padding-top: 20px;
 }
-.live{
+
+.live {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;  
-  padding-left: 8%; 
+  justify-content: flex-start;
+  padding-left: 8%;
   padding-top: 10px;
-  gap: 20px; 
+  gap: 20px;
   flex-wrap: wrap;
-  height: auto;
 }
-.liveclasses-container { 
+
+.liveclasses-container {
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start;  
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%; 
+  width: 30%;
   border-radius: 5px;
-  overflow: hidden; 
-  min-height: auto; 
-  padding-bottom: 10px;
+  overflow: hidden;
 }
+
 .card {
   height: auto;
   padding-bottom: 15px;
+}
 
-}
 .liveclasses-container:hover {
-  transform: translateY(-5px);       
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
-  transition: all 0.3s ease-in-out;  
-  cursor: pointer;  
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
+
 .indicator-bar {
   height: 6px;
   width: 100%;
   background-color: #28a745;
   margin-bottom: 20px;
-  
 }
+
 .liveclasses-content {
   display: flex;
   flex-direction: row;
   padding: 16px;
   gap: 36px;
-  min-height: 250px;
-  
 }
 
 .information {
   display: flex;
   flex-direction: column;
   flex: 2;
-  
-  
 }
 
 .class-info {
   display: flex;
-  flex-direction: row;        
-  align-items: center;  
-  justify-content: space-between;      
-  gap: 16px;                  
-  padding: 0 20px;            
-  
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  white-space: nowrap;
+  padding: 0 20px;
 }
 
 .letter-tag {
@@ -140,7 +138,6 @@ h1{
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-  
 }
 
 .class-text {
@@ -150,29 +147,19 @@ h1{
   font-weight: 600;
   flex: 1;
 }
+
 .class-info h3 {
   margin: 0;
   font-size: 15px;
   font-weight: 600;
   color: #222;
-  white-space: nowrap;       
-  overflow: hidden;           
-  text-overflow: ellipsis;    
-  max-width: 100%;           
-  display: block;
 }
 
 .class-info p {
   margin: 0;
   color: #555;
   font-size: 14px;
-  white-space: nowrap;        
-  overflow: hidden;           
-  text-overflow: ellipsis;    
-  max-width: 100%;           
-  display: block;
 }
-
 
 .status.upcoming {
   background-color: #d0e8ff6a;
@@ -184,7 +171,7 @@ h1{
   align-items: center;
   font-weight: 600;
   width: 100px;
-  height:34px;
+  height: 34px;
 }
 
 .progress-time {
@@ -193,9 +180,8 @@ h1{
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 0px;
-   padding: 10px 15px;
-  
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .progress-time .row {
@@ -207,6 +193,7 @@ h1{
 .progress-time .highlight {
   font-size: 17px;
 }
+
 .progress-time .highlights {
   font-size: 12px;
   color: #575555;
@@ -215,58 +202,75 @@ h1{
 .progress-time p {
   margin: 2px 0;
   font-size: 14px;
-  font-weight: 550;   
+  font-weight: 550;
 }
+
 .progress-time hr {
-  margin: 4px 0;   
+  margin: 4px 0;
 }
+
 .actions {
   display: flex;
+  flex-grow: 1; 
   justify-content: space-between;
   align-items: center;
+  height: 100%;
   background-color: #bbbaba16;
-  padding: 8px 15px;   /* small padding */
-  height: 40px;        /* fixed neat height */
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50px; 
 }
 
 .actions p {
-  margin: 0;           /* remove extra margin */
   font-size: 14px;
   font-weight: 500;
-  display: flex;
-  align-items: center; 
 }
-
 
 .join-btn:hover {
   background-color: #0056b3;
 }
+
 .attendence-buttons {
-  display: flex;           
-  gap: 10px;               
+  display: flex;
+  gap: 10px;
   justify-content: center;
-  
+}
+
+.liveclasses-container.card .information {
+  justify-content: flex-start;
+}
+
+.liveclasses-container.card .progress-time {
+  margin-bottom: 5px;  
+}
+
+.liveclasses-container.card .actions {
+  margin-top: 5px;      
+  padding: 8px 10px;    
 }
 
 .attendence-button button {
-  width: 120px;
+  width: 7vw;
   height: 70px;
   border-radius: 8px;
   font-size: 16px;
   display: flex;
   background-color: #ffffff;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: start;
   align-items: flex-start;
   padding: 10px;
+  gap: 10px;
 }
-.placementimg{
+
+.placementimg {
   border-radius: 50%;
   height: 50px;
   width: 50px;
 }
-.placed-container{
- background: linear-gradient(to right, #e3f2fd, #e8f5e9);
+
+.placed-container {
+  background: linear-gradient(to right, #e3f2fd, #e8f5e9);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -274,7 +278,13 @@ h1{
   padding: 4px;
   border-radius: 8px;
   height: 34px;
-  margin-bottom: 0px;  
+  margin-bottom: 0px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 90%;
 }
 
 .progress-bar-container {
@@ -288,10 +298,12 @@ h1{
 
 .progress-bar-fill {
   height: 100%;
-    background-color: black;
+  background-color: black;
   border-radius: 2px;
   transition: width 0.3s ease-in-out;
 }
+
+
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
@@ -315,6 +327,7 @@ h1{
   .broKod-container img {
     max-width: 100%;
     height: auto;
+    flex: none; 
   }
 
   .live {
@@ -334,6 +347,8 @@ h1{
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+    padding: 10px;
+    padding-right: 10px;
   }
 
   .actions {
@@ -366,6 +381,12 @@ h1{
   flex-wrap: wrap; 
   gap: 5px;
   width: 100%;
+}
+.placed-container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 }
 

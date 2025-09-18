@@ -58,8 +58,8 @@ const Navbar = () => {
                 background: "linear-gradient(to right, #800080, #000080, #483d8b)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                fontWeight: "500",
-                fontSize: "24px",
+                fontWeight: "600",
+                fontSize: "30px",
                 textAlign: "center",
               }}
             >
@@ -68,9 +68,9 @@ const Navbar = () => {
 
             <div className="referallnbonuse">
               <h3>Referral Bonus</h3>
-              <p>Earn $2000 for every successful referral</p>
-              <p>Your friend gets $2000 discount on course fees</p>
-              <p>No limit on referrals – earn unlimited rewards!</p>
+              <p>Earn <span><i class="bi bi-currency-rupee"></i>2000</span> for every successful referral</p>
+              <p>Your friend gets <span><i class="bi bi-currency-rupee"></i>2000</span>  discount on course fees</p>
+              <p style={{fontStyle: "oblique", color: "#000080", fontWeight: "bold"}}>No limit on referrals - earn unlimited rewards!</p>
             </div>
 
             <div className="importent-instructions">

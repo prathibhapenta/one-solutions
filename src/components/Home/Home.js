@@ -341,9 +341,9 @@ const Home = () => {
 
           <h1>{homeData.attendance.title}<i className="bi bi-question-circle"
             style={{ marginRight: "8px", padding: "10px" }}></i> </h1>
-            <div className="live">
+            <div className="live" >
         {homeData.attendance.items.map((item) => (
-          <div key={item.id} className="liveclasses-container card">
+          <div key={item.id} className="liveclasses-container card" style={{ height: "30vh" }}>
             <div className="information">
               <div className="progress-time">
                     <div className="row">
@@ -395,9 +395,8 @@ const Home = () => {
           </div>
 
           <h1>{homeData.placements.title}<i className="bi bi-question-circle"
-            style={{ marginRight: "8px", padding: "10px" }}></i>
-        </h1>
-        <div className="live" style={{ height: "45vh" }}>
+            style={{ marginRight: "8px", padding: "10px" }}></i></h1>
+        <div className="live" >
           {homeData.placements.items.map((item) => (
             <div key={item.id} className="liveclasses-container" style={{ paddingTop: "20px" }}>
               <div className="information">
@@ -412,7 +411,7 @@ const Home = () => {
                 <hr/>
                 <div className="progress-time" style={{ marginTop: "0" }}>
                   <div className="row">
-                    <span className="span">College</span>
+                    <p className="span">College</p>
                     <p>{item.college}</p>
                   </div>
                   <div
@@ -429,16 +428,11 @@ const Home = () => {
                     <h4 style={{ margin: 0, fontSize: "16px" }}>{item.package}</h4>
                   </div>
                 </div>
-                <div className="actions"
-                  style={{
-                    display: "flex",justifyContent: "flex-start",
-                    alignItems: "flex-start",padding: "10px 15px",
-                    backgroundColor: "transparent",marginTop: "0",
-                  }}>
-                  <p style={{ fontSize: "14px", fontWeight: "400", lineHeight: "1.6", color: "#333", margin: "0",}}>
+                
+                  <p style={{ fontSize: "14px", fontWeight: "400", lineHeight: "1.6", color: "#333", margin: "0", padding: "20px"}}>
                     {item.feedback}
                   </p>
-                </div>
+                
               </div>
             </div>
           ))}
