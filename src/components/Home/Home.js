@@ -343,7 +343,7 @@ const Home = () => {
             style={{ marginRight: "8px", padding: "10px" }}></i> </h1>
             <div className="live" >
         {homeData.attendance.items.map((item) => (
-          <div key={item.id} className="liveclasses-container card" style={{ height: "30vh" }}>
+          <div key={item.id} className="liveclasses-container card" >
             <div className="information">
               <div className="progress-time">
                     <div className="row">
