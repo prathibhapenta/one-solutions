@@ -220,7 +220,45 @@ span {
 .mentor {
   font-size: 15px;
 }
+.module-details {
+  background: #f9f9f9;      
+  border: 1px solid #ddd;    
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 12px auto;
+  margin-top: 12px;
+  animation: expand 0.3s ease-in-out;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.module-details h5 {
+  background: #ffffff;      
+  color: #333;              
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;          
+    
+  justify-content: flex-start;
+}
+
+
+.module-details h5:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 480px) {
   .courses-container {

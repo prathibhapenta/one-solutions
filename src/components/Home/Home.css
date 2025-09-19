@@ -550,5 +550,100 @@ hr {
   .liveclasses-container {
      width: 30%;
      }
+     
+  .class-info {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .attendence-buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .attendence-button button {
+    width: 45%;
+  }
+
+  .placed-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  .broKod-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 85%; 
+    margin: 30px auto;
+   }
+  .broKod-container img {
+     max-width: 90%;
+     }
+  .live {
+    justify-content: flex-start;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .class-info{
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+
+  .liveclasses-container {
+    width: 48%;
+    min-height: auto;
+  }
+  .placed-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+  }
+  
+.attendence-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.liveclasses-container.card .information {
+  justify-content: flex-start;
+}
+
+.liveclasses-container.card .progress-time {
+  margin-bottom: 5px;  
+}
+
+.liveclasses-container.card .actions {
+  margin-top: 5px;      
+  padding: 8px 10px;    
+}
+
+.attendence-button button {
+  width: 10vw;
+  height: 70px;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 10px;
+  padding-right: 20px;
+  gap: 10px;
+}
 }
 

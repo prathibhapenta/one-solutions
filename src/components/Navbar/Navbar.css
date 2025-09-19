@@ -36,7 +36,7 @@ html, body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   list-style: none;
 }
 
@@ -67,6 +67,7 @@ html, body {
   padding: 10px 15px;
   font-weight: bold;
   cursor: pointer;
+  white-space: nowrap;
   transition: opacity 0.3s ease;
 }
 
@@ -283,19 +284,18 @@ span {
 @media (max-width: 480px) {
   body { padding-top: 50px; }
 
-  .container { padding: 10px 15px; }
-
-  .dropdown-content,
-  .profile-dropdown {
-    position: fixed;
-    bottom: 60px;
-    left: 5px;
-    right: 5px;
-    width: auto;
-    max-width: calc(100% - 10px);
-    padding: 12px;
+  .container { 
+    padding: 10px 15px;
+   }
+    .profile-dropdown ul,
+  .profile-dropdown li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
   }
 
+  
   .footer-menu {
     display: flex;
     justify-content: space-around;
@@ -346,13 +346,22 @@ span {
   .mentor-connect {
     display: none;
   }
-  .nav-links{
+   .nav-links {
     font-size: 15px;
+    gap: 10px;
+  }
+
+  .help-earn button {
+    white-space: nowrap;
+    padding-left: 10px;
   }
 
   .help-earn .placementimg {
     height: 40px;
     width: 40px;
+  }
+  .mentor-connect{
+     white-space: nowrap;
   }
 }
 
@@ -364,21 +373,65 @@ span {
      left: 5%; 
      right: 5%;
      }
+  .help-earn button {
+    white-space: nowrap;
+     padding-left: 10px;
+  }
+  .mentor-connect{
+     white-space: nowrap;
+  }
+  .nav-links {
+    font-size: 15px;
+    gap: 10px;
+  }
 }
 @media (max-width: 1280px) {
   .container {
      padding: 15px 25px; 
     }
+  .help-earn button {
+    white-space: nowrap;
+     padding-left: 10px;
+  }
+  .mentor-connect{
+     white-space: nowrap;
+  }
+  .nav-links {
+    font-size: 15px;
+    gap: 10px;
+  }
 }
 @media (max-width: 1440px) {
   .container { 
     max-width: 1380px; 
     margin: 0 auto;
    }
+   .help-earn button {
+    white-space: nowrap;
+     padding-left: 10px;
+  }
+  .mentor-connect{
+     white-space: nowrap;
+  }
+  .nav-links {
+    font-size: 15px;
+    gap: 10px;
+  }
 }
 @media (min-width: 1920px) {
   .container { 
     max-width: 1600px;
      margin: 0 auto; 
     }
+    .help-earn button {
+    white-space: nowrap;
+     padding-left: 10px;
+  }
+  .mentor-connect{
+     white-space: nowrap;
+  }
+  .nav-links {
+    font-size: 15px;
+    gap: 10px;
+  }
 }

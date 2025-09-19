@@ -52,7 +52,7 @@ const Navbar = () => {
         <button onClick={toggleDropdown}>Help and Earn</button>
 
         {showDropdown && (
-          <div className="dropdown-content" style = {{width: "500px"}}>
+          <div className="dropdown-content" >
             <h4
               style={{
                 background: "linear-gradient(to right, #800080, #000080, #483d8b)",
