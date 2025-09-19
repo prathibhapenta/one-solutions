@@ -110,17 +110,17 @@ const coursesData = {
             </div>
             <div className="mentor-progress">
               <img src="/assets/placements.jpg" alt="BroKod" className='placementimg'/>
-              <div className='mentor-name' style={{paddingLeft: "5px"}}>
-                <p>Mentor Name</p>
-                <p style={{color: "black", fontSize:"16px" }}>{course.mentor}</p>
+              <div className='mentor-name ' style={{paddingLeft: "5px"}}>
+                <p>Mentor</p>
+                <p className='mentor' style={{color: "black", fontSize:"16px" }}>{course.mentor}</p>
               </div>
               <div className='mentor-name'>
                 <p>Start Date</p>
-                <p style={{color: "black", fontSize:"16px"}}>{course.startDate}</p>
+                <p className='mentor' style={{color: "black", fontSize:"16px"}}>{course.startDate}</p>
               </div>
               <div className='mentor-name'>
                 <p>Course Type</p>
-                <p style={{color: "black", fontSize:"16px"}}>{course.type}</p>
+                <p className='mentor' style={{color: "black", fontSize:"16px"}}>{course.type}</p>
               </div>
               <div className="progress-section">
                 <p>{course.progress}%</p>

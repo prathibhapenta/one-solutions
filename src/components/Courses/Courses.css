@@ -143,7 +143,6 @@ span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-color: #000;
   gap: 5px;
 }
 
@@ -172,7 +171,6 @@ span {
   gap: 10px; 
   margin-top: 15px;
   margin-right: 40px; 
-  background-color: transparent; 
 }
 
 .btn-view {
@@ -219,6 +217,11 @@ span {
   color: #333;
 }
 
+.mentor {
+  font-size: 15px;
+}
+
+
 @media (max-width: 480px) {
   .courses-container {
     margin: 0;
@@ -229,13 +232,26 @@ span {
   }
 
   .courses-information {
-    flex-direction: row;   
-    gap: 10px;
-    text-align: center;
+    gap: 5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
   }
 
   .courses-information p {
-    font-size: 12px;
+    font-size: 10px;
+    padding: 4px 0;
+    gap: 5px;
+  }
+
+  .mentor-name p {
+    margin: 2px 0;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
+  .mentor {
+    font-size: 9px !important;
   }
 
   .drop-down {
@@ -251,55 +267,52 @@ span {
 
   .courses {
     padding: 12px;
-    gap: 15px;
-  }
-
-  .couses-and-status {
-    flex-direction: row;   
-    gap: 10px;
-    text-align: center;
+    gap: 12px;
   }
 
   .couses-and-status h4 {
-    font-size: 12px;
+    font-size: 18px;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .module-topics {
-    flex-direction: row;   
-    gap: 8px;
+    gap: 6px;
   }
+  
+  .couses-and-status button {
+  background-color: #4f8ece;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
 
   .mentor-progress {
-    flex-direction: row;  
-    align-items: flex-start;
-    gap: 12px;
-    white-space: nowrap;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .placementimg {
-    height: 40px;
-    width: 40px;
-  }
-
-  .progress-section {
-    width: 100%;
-  }
-
-  .progress {
-    max-width: 100%;
+    height: 35px;
+    width: 35px;
   }
 
   .view-continue {
-    flex-direction: row;   
-    margin: 10px 0 0 0;
-    gap: 8px;
+    margin: 5px 0 0 0;
+    gap: 5px;
     justify-content: center;
   }
 
   .btn-view,
   .btn-continue {
-    width: 50%;
-    justify-content: center;
+    width: 45%;
+    font-size: 12px;
+    padding: 8px 10px;
   }
 }
 
@@ -318,16 +331,16 @@ span {
   }
 
   .courses-information p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
-  .drop-down {
-    padding-top: 20px;
-    text-align: center;
+  .mentor-name p {
+    margin: 2px 0;
+    font-size: 12px;
   }
 
-  .drop-down select {
-    width: 220px;
+  .mentor {
+    font-size: 12px;
   }
 
   .courses {
@@ -336,7 +349,7 @@ span {
 
   .mentor-progress {
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px;
     justify-content: flex-start;
   }
 
@@ -344,19 +357,16 @@ span {
     flex: 1 1 100%;
   }
 
-  .progress {
-    max-width: 100%;
-  }
-
   .view-continue {
     justify-content: center;
-    gap: 15px;
-    margin: 15px 0 0 0;
+    gap: 12px;
+    margin: 12px 0 0 0;
   }
 
   .btn-view,
   .btn-continue {
     flex: 1;
-    justify-content: center;
+    font-size: 13px;
+    padding: 9px 14px;
   }
 }
