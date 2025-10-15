@@ -4,7 +4,9 @@ import { useAuth } from "./context/AuthContext";
 
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
-import Profile from "./components/Profile/Profile";
+ 
+import ProfilePage from "./components/Profile/ProfilePage";
+// Split view
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Courses from "./components/Courses/Courses";
@@ -16,8 +18,6 @@ import Codeplayground from "./CodePlayground";
 
 function App() {
   const { isAuthenticated, loading } = useAuth();
-
-  console.log('App rendering - isAuthenticated:', isAuthenticated, 'loading:', loading);
 
   if (loading) {
     return (
@@ -36,7 +36,7 @@ function App() {
         {isAuthenticated && <Navbar />}
         <main>
           <Routes>
-            {/* Public routes - redirect to home if already authenticated */}
+            {/* Public routes */}
             <Route
               path="/login"
               element={!isAuthenticated ? <Login /> : <Navigate to="/home" replace />}
@@ -46,7 +46,7 @@ function App() {
               element={!isAuthenticated ? <Register /> : <Navigate to="/home" replace />}
             />
 
-            {/* Protected routes - redirect to login if not authenticated */}
+            {/* Protected routes */}
             <Route
               path="/"
               element={<Navigate to={isAuthenticated ? "/home" : "/login"} replace />}
@@ -55,9 +55,10 @@ function App() {
               path="/home"
               element={isAuthenticated ? <Home /> : <Navigate to="/login" replace />}
             />
+            {/* Profile split view */}
             <Route
               path="/profile"
-              element={isAuthenticated ? <Profile /> : <Navigate to="/login" replace />}
+              element={isAuthenticated ? <ProfilePage /> : <Navigate to="/login" replace />}
             />
             <Route
               path="/courses"
@@ -84,7 +85,7 @@ function App() {
               element={isAuthenticated ? <Codeplayground /> : <Navigate to="/login" replace />}
             />
 
-            {/* Catch all route */}
+            {/* Catch-all route */}
             <Route
               path="*"
               element={<Navigate to={isAuthenticated ? "/home" : "/login"} replace />}

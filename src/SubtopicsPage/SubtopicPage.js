@@ -433,6 +433,13 @@ const modules = {
           "Python Summary Cheat Sheet - 4",
         ],
       },
+      {
+        name : "Programming Foundations Course Exam",
+        topic : [
+          "Programming Foundations Course Exam | Instructions",
+          "Programming Foundations Course Exam",
+        ]
+      }
     ],
   },
   Static_Website : {
@@ -462,6 +469,8 @@ const modules = {
       "Introduction to CSS Box Model Part 2",
       "Introduction to CSS Box Model Part 2 | Cheat Sheet",
       "MCQ Practice - BoxModel 2",
+      "Coding Platform Walk-through",
+      "Coding Pratice 1",
     ]
           },
           { name: "Bootstrap", 
@@ -472,6 +481,9 @@ const modules = {
       "Introduction to Bootstrap Part 2",
       "Introduction to Bootstrap Part 2 | Cheat Sheet",
       "MCQ Practice - Bootstrap 2",
+      "Coding Pratice 2",
+      "Coding Pratice 3",
+      "Coding Pratice 4",
     ]
           },
           { name: "Developing Layouts", 
@@ -482,9 +494,13 @@ const modules = {
       "Approach to Develop a Layout",
       "Approach to Develop a Layout | Cheat Sheet",
       "MCQ Practice - Layout 2",
+      "A Note on BootStrap Versions",
       "Favourite Place Detailed View Section",
       "Favourite Place Detailed View Section | Cheat Sheet",
       "MCQ Practice - Layout 3",
+      "Coding Pratice 5",
+      "Coding Pratice 6",
+      "Coding Pratice 7",
     ]
            },
           { name: "Website Integration",
@@ -492,15 +508,23 @@ const modules = {
       "Website Integration Part 1",
       "Website Integration Part 1 | Cheat Sheet",
       "MCQ Practice - Website 1",
-      "Website Integration Part 2",
-      "Website Integration Part 2 | Cheat Sheet",
+      "Website Integration | Part 2",
+      "Website Integration | Part 2 | Cheat Sheet",
       "MCQ Practice - Website 2",
+      "Coding Pratice 8",
+      "Coding Pratice 9",
+      "Coding Pratice 10",
+      "Website: Behind the Scenes",
+      "MCQ Pratice - Behind the Scenes",
       "HTML Hyperlinks",
       "HTML Hyperlinks | Cheat Sheets",
       "MCQ Practice - HTML Hyperlinks",
       "On-Demand Session",
       "On-Demand Session | Cheat Sheets",
       "MCQ Practice - OnDemand",
+      "Coding Pratice 11",
+      "Coding Pratice 12",
+      "Coding Pratice 13",
       
 
     ]
@@ -517,9 +541,28 @@ const modules = {
       "MCQ Assignment 2",
       "MCQ Assignment 3",
       "MCQ Assignment 4",
+      "Coding Assignment 1",
+      "Coding Assignment 2",
+      "Coding Assignment 3",
+      "Coding Assignment 4",
       
 
              ]
+          },
+          {
+            name : "Mock Tests",
+            topic : [
+              "Coding Test 1",
+              "Coding Test 2",
+
+            ]
+          },
+          {
+            name : "Build Your Own Static Website Course Exam",
+            topic : [
+              "Build Your Own Static Website Course Exam | Instructions",
+              "Build Your Own Static Website Course Exam",
+            ]
           }
         ]
   },
@@ -530,16 +573,18 @@ const modules = {
             topic: [ 
       "Introduction to Responsive Web Design",
       "Introduction to Responsive Web Design | Cheat Sheet",
-     "MCQ Pratice - Res_WD",
+      "MCQ Pratice - Res_WD",
       "BootStrap Grid System Part 1",
       "BootStrap Grid System Prat 1 | Cheat Sheet",
-     "MCQ Pratice - B_GS_1",
+      "MCQ Pratice - B_GS_1",
       "BootStrap Grid System Part 2",
       "BootStrap Grid System Part 2 | Cheat Sheet",
-       "MCQ Pratice - B_GS_2",
+      "MCQ Pratice - B_GS_2",
       "BootStrap Navbar",
       "BootStrap Navbar | Cheat Sheet",
-      "MCQ Pratice - B_Nav"
+      "MCQ Pratice - B_Nav",
+      "Coding Pratice 1",
+      "Coding Pratice 2",
      
     ]
           },
@@ -552,6 +597,8 @@ const modules = {
     "CSS Specificity & Cascade",
     "CSS Specificity & Cascade | Cheat Sheet",
     "MCQ Practice - CSS Specificity & Cascade",
+    "Coding Pratice 3",
+    "Coding Pratice 4",
   ]
 },
 {
@@ -560,6 +607,7 @@ const modules = {
     "Banner Section",
     "Banner Section | Cheat Sheet",
     "MCQ Practice - Banner Section",
+    "Coding Pratice 5",
     "Why Choose us? Section",
     "Why Choose us? Section | Cheat Sheet",
     "MCQ Practice - Why Choose Us Section",
@@ -569,6 +617,10 @@ const modules = {
     "Healthy Food, Delivery and Payment, Thanking Customers Section",
     "Healthy Food, Delivery and Payment, Thanking Customers Section | Cheat Sheet",
     "MCQ Practice - Healthy Delivery & Payments",
+    "Coding Pratice 6",
+    "Coding Pratice 7",
+    "Coding Pratice 8",
+    "Coding Pratice 9",
   ]
 },
           { name: "Developing Layouts 2", 
@@ -579,13 +631,19 @@ const modules = {
       "CSS Gradients & More BootStrap Components",
       "CSS Gradients & More BootStrap Components | Cheat Sheet",
       "MCQ Practice - CSS_Gradients",
+      "Coding Pratice 10",
+      "Coding Pratice 11",
+      "Coding Pratice 12",
+      "Coding Pratice 13",
       
     ]
            },
           { name: "Developing Layouts Pratice",
             topic: [ 
-      "Codding Pratice 1",
-      "Codding Pratice 2",
+      "Coding Pratice 14",
+      "Coding Pratice 15",
+      "Coding Pratice 16",
+      
       
     ]
            },
@@ -601,8 +659,25 @@ const modules = {
       "MCQ Assignment 2",
       "MCQ Assignment 3",
       "MCQ Assignment 4",
+      "Coding Assignment 1",
 
              ]
+          },
+          {
+            name : "Mock Tests",
+            topic : [
+              "Coding Test 1",
+              "Coding Test 2",
+              "Coding Test 3",
+            ]
+          },
+          {
+            name : "Build Your Own Responsive Website Course Exam",
+            topic : [
+              "Build Your Own Responsive Website Course Exam | Instructions",
+              "Build Your Own Responsive Website Course Exam"
+
+            ]
           }
         ]
 
@@ -714,8 +789,30 @@ const modules = {
           "Event Listeners & More Events",
           "Event Listeners & More Events | Cheat Sheet",
           "MCQ Pratice - Event Listeners",
+          "Hypertext Transfer Protocal (HTTP)",
+          "Hypertext Transfer Protocal (HTTP) | Cheat Sheet",
+          "MCQ Pratice - HTTP",
+          "Coding Pratice 14",
+          "Coding Pratice 15",
+          "Coding Assignment 1",
+
         ]
       }, 
+      {
+        name : "Fetch & Callbacks 2",
+        topic : [
+          "HTTP Requests using JS",
+          "HTTP Requests using JS | Cheat Sheet",
+          "MCQ Pratice - HTTP Requests using JS",
+          "Wikipedia Search Application",
+          "Wikipedia Search Application | Cheat Sheet",
+          "MCQ Pratice - Wikipedia Application",
+          "Coding Pratice 16",
+          "Coding Pratice 17",
+          "Coding Pratice 18",
+
+        ]
+      },
       {
         name : "Forms",
         topic : [
@@ -756,7 +853,12 @@ const modules = {
         ]
       },
       {
-        name : "Build Your Own Dynamic Web Application Course Exam"
+        name : "Build Your Own Dynamic Web Application Course Exam",
+        topic : [
+          "Build Your Own Dynamic Web Application Course Exam | Instructions",
+          "Build Your Own Dynamic Web Application Course Exam",
+
+        ]
       }
      ]
   }
@@ -1057,6 +1159,7 @@ const SubtopicPage = () => {
                           {completedSubtopics[sub] && <span className="completion-tick">✓</span>}
                         </div>
                       );
+                      
                     })}
                   </div>
                 )}

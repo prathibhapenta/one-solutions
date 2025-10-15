@@ -7,10 +7,10 @@ const api = axios.create({
   headers: {
     'Content-Type': 'application/json',
   },
-  timeout: 10000, // 10 second timeout
+  timeout: 10000,
 });
 
-// Add token to requests
+// ✅ Add token to requests
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token');
@@ -19,19 +19,16 @@ api.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
-// Handle responses
+// ✅ Handle 401 errors
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
       console.log('Unauthorized, removing token...');
       localStorage.removeItem('token');
-      // Don't redirect here to avoid conflicts with React Router
     }
     return Promise.reject(error);
   }
@@ -39,14 +36,19 @@ api.interceptors.response.use(
 
 export const authAPI = {
   login: (credentials) => api.post('/api/auth/login', credentials),
+
   register: (studentData) => {
-    // Remove Content-Type for FormData to let browser set it automatically
     return api.post('/api/auth/register', studentData);
   },
+
+  // 📌 GET current profile
   getProfile: () => api.get('/api/auth/profile'),
-  updateProfile: (profileData) => {
-    return api.put('/api/auth/profile', profileData);
-  },
+
+  // 📌 UPDATE profile with FormData
+  updateProfile: (profileData) =>
+    api.put('/api/auth/profile/update', profileData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    }),
 };
 
 export const healthCheck = () => api.get('/api/health');

@@ -170,7 +170,7 @@ const Navbar = () => {
               ref={profileRef}
             />
           ) : (
-            <span>{user.firstName?.charAt(0)}{user.lastName?.charAt(0)}</span>
+            <span onClick={toggleProfile}>{user.firstName?.charAt(0)}{user.lastName?.charAt(0)}</span>
           )}
 
 
