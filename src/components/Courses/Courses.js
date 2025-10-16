@@ -39,7 +39,7 @@ const coursesData = {
           "Coding Pratice - 1A",
           "Coding Pratice - 1B",
           "Coding Pratice - 1C",
-          "Assignment 1A",
+          "Assignment 1A", 
           "How to debug your code?",
           "Type Conversion",
           "Type Conversion | Cheat Sheet",
@@ -360,7 +360,7 @@ const coursesData = {
       type: "Academic",
       progress: 30,
       modules: [
-          { name: "Introduction to HTML & CSS", 
+          { name: "Introduction to HTML & CSS",  
             topic: [ 
       "Introduction to HTML",
       "Introduction to HTML | Cheat Sheet",
@@ -813,7 +813,7 @@ const coursesData = {
       ]
 
     }
-  ],
+  ], 
   completed: [],
   upcoming: [],
 };
@@ -829,7 +829,7 @@ const Courses = () => {
   const navigate = useNavigate();
   const currentCourses = coursesData[active];
 
-  // ✅ MCQ helper
+
   const isMCQ = (subtopic) => subtopic.toLowerCase().includes("mcq");
 
   const toggleCourse = (courseId) => {
